@@ -13,7 +13,6 @@ def run():
     user_repository = UserRepository()
     login_view = LoginView()
     login_controller = LoginController(login_view, user_repository)
-    login_controller.connect_signal()
     
     # Afficher la vue de connexion
     login_view.setWindowTitle("Connexion")
